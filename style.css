@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #1D1E23;
+}
+h1{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+h1 span{
+    position: relative;
+    color: darkorchid;
+}
+h1 span::before{
+    content: "";
+    right:-8px;
+    top:50%;
+    position: absolute;
+    height: 30px;
+    width: 2px;
+    background: darkorchid;
+    transform: translateY(-45%);
+    animation:blink 0.7s infinite;
+}
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
+}
